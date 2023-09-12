@@ -5034,6 +5034,7 @@ small {
 
 .card {
   border: none;
+  background-color: transparent;
 }
 
 body>section .card-header {
@@ -5051,4 +5052,13 @@ body>section .card-header h2 {
   font-weight: 700;
   position: relative;
   color: #fff;
+}
+
+.card-body {
+  background: linear-gradient(to right, #151522 0%, #000 101%);
+}
+
+body>section .card-body h4 {
+  color: #fff;
+  font-size: 24px;
 }
