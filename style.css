@@ -5062,3 +5062,12 @@ body>section .card-body h4 {
   color: #fff;
   font-size: 24px;
 }
+
+.fa-chevron-down {
+  transform: rotate(0deg);
+  transition: all .2s;
+}
+
+.fa-chevron-down.rotate {
+  transform: rotate(180deg);
+}

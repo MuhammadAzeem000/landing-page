@@ -124,6 +124,13 @@ $(function () {
     // var header = document.getElementById("myHeader");
     // var sticky = header.offsetTop;
 
+    $('#appCalculator').on('show.bs.collapse', function () {
+        document.querySelector('#accordion-icon').classList.add('rotate');
+    })
+    $('#appCalculator').on('hidden.bs.collapse', function () {
+        document.querySelector('#accordion-icon').classList.remove('rotate');
+    })
+
 
     $(".popupFormOpen").click(function () {
         $('.formdiv').addClass("popformkhulwana");
