@@ -5,14 +5,6 @@ $(function () {
         $('html, body').animate({ scrollTop: $(slidingID).offset().top - 1 }, 1000);
     });
     $('[href="#"]').attr('href', 'javascript:;');
-    // $('body').on('keypress', '.numberOnly', function (i) { var keycode = i.which; if (!(i.shiftKey == false && (keycode == 46 || keycode == 8 || keycode == 37 || keycode == 39 || (keycode >= 48 && keycode <= 57)))) { return false; } });
-    // $('body').on('click', '.doChat', function () {
-    //     if (typeof $zopim != 'undefined') {
-    //         $zopim.livechat.window.show();
-    //     } else if (Tawk_API) {
-    //         Tawk_API.toggle();
-    //     }
-    // });
     $('.logosSlider').slick({
         autoplay: true,
         autoplaySpeed: 2000,
@@ -104,9 +96,7 @@ $(function () {
         var topwidtH = $('slide .col-md-7').width();
 
         $('.textslider').css({ 'width': topwidtH });
-        // $(window).load(function () {
-        //     $('.formdiv').addClass("popformkhulwana");
-        // });
+
     }
     $(".formdiv .toggle span").click(function () {
         $('.formdiv').addClass("popformkhulwana");
@@ -114,15 +104,6 @@ $(function () {
     $(".formdiv .toggle .croxDv").click(function () {
         $('.formdiv').removeClass("popformkhulwana");
     });
-    // $('#number').keypress(function (event) {
-    //     console.log(event.which);
-    //     if (event.which != 8 && isNaN(String.fromCharCode(event.which))) {
-    //         event.preventDefault();
-    //     }
-    // });
-    // window.onscroll = function() {myFunction()};
-    // var header = document.getElementById("myHeader");
-    // var sticky = header.offsetTop;
 
     $('#appCalculator').on('show.bs.collapse', function () {
         document.querySelector('#accordion-icon').classList.add('rotate');
@@ -298,42 +279,38 @@ $(function () {
 
 });
 
-// function myFunction() {
-//     if (window.pageYOffset > sticky) {
-//         header.classList.add("sticky");
-//     } else {
-//         header.classList.remove("sticky");
-//     }
-// }
+function toggleChild() {
+    const parent = $(this).closest("div").find('.child-option');
 
-// function formScripts() {
-//     $('body').on('click', '.doGetApp', function () {
-//         $('html').addClass('openPop');
-//     }).on('click', '.overflowDv, .popupFrm .closepop', function () {
-//         $('html').removeClass('openPop');
-//     });
-//     var inputPhone, inputPhone2, iti;
-//     inputPhone2 = document.querySelectorAll(".phonefield2");
-//     for (i = 0; i < inputPhone2.length; i++) {
-//         iti = window.intlTelInput(inputPhone2[i], { utilsScript: pathrootdir + "/assets/intl-tel-input/js/utils.js", });
-//         iti.setCountry('ae');
-//     }
+    if (this.checked) {
+        if ($(parent).length !== 0) {
+            $(parent).addClass('show');
+        }
+    } else {
+        if ($(parent).length !== 0) {
+            $(parent).removeClass('show');
+        }
+    }
+}
 
-//     setTimeout(function () {
-//         $(".formDv form").validate();
-//         $(".notchDv form").validate();
-//         $(".popupFrm form").validate();
-//         $(".backgroundnewformDv form").validate();
-//         $(".formdiv form").validate();
-//         $(".mainfrminfogasDv form").validate();
-//     }, 1000);
-// }
+function calculateTotal() {
+    const checkboxes = document.querySelectorAll('#calculatorModal input[type="checkbox"]');
+    let total = 0;
 
-// var inputPhone3 = document.querySelector("#phonefield3");
-// var iti3 = window.intlTelInput(inputPhone3, { utilsScript: "intl-tel-input/js/utils.js", });
-// iti3.setCountry('ae');
+    checkboxes.forEach(function (checkbox) {
+        if (checkbox.checked) {
+            total += (Number(checkbox.value));
 
-//   $("#phonefield3").intlTelInput({ 
-//     initialCountry: "ae",
-//     separateDialCode: true 
-// });
+        }
+    });
+
+    // Update the total displayed on the page
+    document.getElementById('total').innerText = total;
+}
+
+// Add event listeners to checkboxes to trigger the calculation
+var checkboxes = document.querySelectorAll('#calculatorModal input[type="checkbox"]');
+checkboxes.forEach(function (checkbox) {
+    checkbox.addEventListener('change', calculateTotal);
+    checkbox.addEventListener('change', toggleChild)
+});
