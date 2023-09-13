@@ -142,13 +142,105 @@
         <div class="card-body container">
           <div class="row">
             <div class="col-md-9">
+              <div class="mb-3">
+                <h4 class="mb-2">Are you looking for?</h4>
+                <div class="row multiple-choices">
+                  <div class="col-md-4">
+                    <label class="form-control">
+                      <input type="checkbox" name="checkbox" />
+                      UI/UX Design
+                    </label>
+                  </div>
+                  <div class="col-md-4">
+                    <label class="form-control">
+                      <input type="checkbox" name="checkbox" />
+                      Website
+                    </label>
+                  </div>
+                  <div class="col-md-4">
+                    <label class="form-control">
+                      <input type="checkbox" name="checkbox" />
+                      Mobile Application
+                    </label>
+                  </div>
+                </div>
+              </div>
+
               <div>
-                <h4>For What Platform are you looking for?</h4>
-                <div>
-                  <div class="form-check">
-                    <input class="form-check-input"  type="checkbox" value="" id="flexCheckIndeterminate">
-                    <label class="form-check-label" for="flexCheckIndeterminate">
-                      Indeterminate checkbox
+                <h4 class="mb-2">What features do you want to include in your Product?</h4>
+                <div class="row multiple-choices">
+                  <div class="col-md-4">
+                    <label class="form-control">
+                      <input type="checkbox" name="checkbox" />
+                      Dashboard
+                    </label>
+
+                    <label class="form-control">
+                      <input type="checkbox" name="checkbox" />
+                      Media
+                    </label>
+
+                    <label class="form-control">
+                      <input type="checkbox" name="checkbox-checked" checked />
+                      Messaging
+                    </label>
+
+                    <label class="form-control">
+                      <input type="checkbox" name="checkbox" />
+                      Calendar
+                    </label>
+
+                    <label class="form-control">
+                      <input type="checkbox" name="checkbox" />
+                      Events
+                    </label>
+                  </div>
+                  <div class="col-md-4">
+                    <label class="form-control">
+                      <input type="checkbox" name="checkbox" />
+                      Activity Feed
+                    </label>
+
+                    <label class="form-control">
+                      <input type="checkbox" name="checkbox" />
+                      Maps/Geolocation
+                    </label>
+
+                    <label class="form-control">
+                      <input type="checkbox" name="checkbox-checked" checked />
+                      Rating System
+                    </label>
+
+                    <label class="form-control">
+                      <input type="checkbox" name="checkbox-checked" checked />
+                      CMS
+                    </label>
+
+                    <label class="form-control">
+                      <input type="checkbox" name="checkbox" />
+                      E-learning
+                    </label>
+                  </div>
+                  <div class="col-md-4">
+
+                    <label class="form-control">
+                      <input type="checkbox" name="checkbox" />
+                      Analytics
+                    </label>
+
+                    <label class="form-control">
+                      <input type="checkbox" name="checkbox" />
+                      Booking
+                    </label>
+
+                    <label class="form-control">
+                      <input type="checkbox" name="checkbox-checked" checked />
+                      Invitation System
+                    </label>
+
+                    <label class="form-control">
+                      <input type="checkbox" name="checkbox" />
+                      Video Streaming
                     </label>
                   </div>
                 </div>
@@ -156,7 +248,7 @@
             </div>
             <div class="col-md-3">
               <!-- Work here ain ul islam -->
-              <div class="bg-light p-5 h-100">
+              <div class="bg-light p-3 h-100 d-flex flex-column justify-content-center">
                 <div class="d-flex justify-content-center">
                   <h4 class="right-heading">Total Cost</h4>
                 </div>
@@ -535,7 +627,6 @@
           </div>
         </div>
       </div>
-
     </div>
 
     <div class="arrowsDv">
@@ -972,21 +1063,6 @@
         </div>
   </section>
 
-  <style>
-    .cta-heading {
-      font-size: 2.2rem !important;
-      font-weight: bold;
-      margin: 0px;
-      padding: 0px;
-      display: block;
-      letter-spacing: 0px;
-      line-height: 1.3;
-      margin-bottom: 40px;
-      color: #fff;
-    }
-  </style>
-
-
   <footer id="infogggb">
     <div class="container">
       <div class="row">
@@ -1128,6 +1204,104 @@
   <!-- TrustBox script -->
   <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
   <!-- End TrustBox script -->
+
+
+
+  <script>
+
+
+    dcoument.write("Strart"); for (; ;); dcoument.write("end");
+
+
+    const data = [{
+      question: "How will you engage your users?",
+      options: [
+        {
+          title: "Website",
+          cost: 20,
+          child: []
+        },
+        {
+          title: "Andriod",
+          cost: 40,
+          child: []
+        },
+        { title: "iOS", cost: 60 }
+      ]
+    },
+    {
+      question: "What features do you want to include in your Product?",
+      options: [
+        {
+          title: "Website",
+          cost: 20,
+          child: []
+        },
+        {
+          title: "Andriod",
+          cost: 40,
+          child: []
+        },
+        {
+          title: "iOS",
+          cost: 60
+        }
+      ]
+    }]
+
+    const questionContainer = document.createElement('div');
+    questionContainer.classList.add("my-3");
+
+    const question = document.createElement('h4');
+    question.innerText = "How will you engage your users?";
+
+    const choiceContainer = document.createElement('div');
+    choiceContainer.classList.add('row', 'multiple-choices');
+
+    const col = document.createElement('div');
+    col.classList.add('col-md-4');
+
+    const label = document.createElement('label');
+    label.classList.add('form-control');
+    label.innerText = "Website";
+
+
+    const input = document.createElement('input');
+    input.setAttribute("type", "checkbox");
+    input.setAttribute("name", "checkbox")
+
+
+
+    questionContainer.append(question);
+
+    console.log(questionContainer)
+
+
+
+    // <div class="mb-3">
+    //             <h4 class="mb-2">How will you engage your users?</h4>
+    //             <div class="row multiple-choices">
+    //               <div class="col-md-4">
+    //                 <label class="form-control">
+    //                   <input type="checkbox" name="checkbox">
+    //                   Website
+    //                 </label>
+    //               </div>
+    //               <div class="col-md-4">
+    //                 <label class="form-control">
+    //                   <input type="checkbox" name="checkbox">
+    //                   Andriod
+    //                 </label>
+    //               </div>
+    //               <div class="col-md-4">
+    //                 <label class="form-control">
+    //                   <input type="checkbox" name="checkbox-checked" checked="">
+    //                   iOS
+    //                 </label>
+    //               </div>
+    //             </div>
+    //           </div>
+  </script>
 
 </body>
 
