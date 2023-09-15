@@ -71,7 +71,7 @@
               </a>
             </li>
             <li>
-              <a class="btn btn-outline-primary" data-toggle="modal" data-target="#calculatorModal">
+              <a class="btn btn-outline-primary" data-toggle="modal" data-target="#appCalculatorModal">
                 Project Estimation
               </a>
             </li>
@@ -958,8 +958,9 @@
       </form>
     </div>
   </section>
+
   <!-- Modal -->
-  <div class="modal fade bd-example-modal-lg" id="calculatorModal" tabindex="-1" role="dialog"
+  <div class="modal fade bd-example-modal-lg" id="appCalculatorModal" tabindex="-1" role="dialog"
     aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
@@ -970,175 +971,31 @@
           <i class="fa fa-times" data-dismiss="modal" aria-label="Close"></i>
         </div>
         <div class="modal-body">
-          <div class="row">
-            <div class="col-md-8">
-              <div class="question">
-                <h4>Are you looking for?</h4>
-                <div class="row question-choice">
-                  <div class="col-md-4">
-                    <label class="form-control">
-                      <input type="checkbox" name="checkbox" value="10" />
-                      <span>UI/UX Design</span>
-                    </label>
-                    <div class="child-option">
-                      <label class="form-control">
-                        <input type="checkbox" name="checkbox" value="10" />
-                        <span>Website Design</span>
-                      </label>
-                      <label class="form-control">
-                        <input type="checkbox" name="checkbox" value="10" />
-                        <span>Application Design</span>
-                      </label>
-                      <label class="form-control">
-                        <input type="checkbox" name="checkbox" value="10" />
-                        <span>Logo Design</span>
-                      </label>
-                      <label class="form-control">
-                        <input type="checkbox" name="checkbox" value="10" />
-                        <span>Broucher Design</span>
-                      </label>
+          <section class="container">
+            <div class="row g-3">
+              <div class="col-md-12">
+                <div class="calculator">
+                  <h6>Please, select one or multiple options</h6>
+
+                  <div class="questions">
+                    <div class="question">
+                      <h2 id="question"></h2>
+                      <div class="options" id="options"></div>
                     </div>
                   </div>
-                  <div class="col-md-4">
-                    <label class="form-control">
-                      <input type="checkbox" name="checkbox" value="10" />
-                      <span>Website</span>
-                    </label>
-                    <div class="child-option">
-                      <label class="form-control">
-                        <input type="checkbox" name="checkbox" value="10" />
-                        <span>Wordpress</span>
-                      </label>
-                      <label class="form-control">
-                        <input type="checkbox" name="checkbox" value="10" />
-                        <span>Shopify</span>
-                      </label>
-                      <label class="form-control">
-                        <input type="checkbox" name="checkbox" value="10" />
-                        <span>Wix</span>
-                      </label>
-                      <label class="form-control">
-                        <input type="checkbox" name="checkbox" value="10" />
-                        <span>Magento</span>
-                      </label>
-                      <label class="form-control">
-                        <input type="checkbox" name="checkbox" value="10" />
-                        <span>Other</span>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <label class="form-control">
-                      <input type="checkbox" name="checkbox" value="10" />
-                      <span>Mobile</span>
-                    </label>
-                    <div class="child-option">
-                      <label class="form-control">
-                        <input type="checkbox" name="checkbox" value="10" />
-                        <span>iOS</span>
-                      </label>
-                      <label class="form-control">
-                        <input type="checkbox" name="checkbox" value="10" />
-                        <span>Andriod</span>
-                      </label>
-                      <label class="form-control">
-                        <input type="checkbox" name="checkbox" value="10" />
-                        <span>Hybird</span>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="question">
-                <h4>What features do you want to include in your Product?</h4>
-                <div class="row question-choice">
-                  <div class="col-md-4">
-                    <label class="form-control">
-                      <input type="checkbox" name="checkbox" value="10" />
-                      <span>Messaging</span>
-                    </label>
-                    <label class="form-control">
-                      <input type="checkbox" name="checkbox" value="10" />
-                      <span>Audio</span>
-                    </label>
-                    <label class="form-control">
-                      <input type="checkbox" name="checkbox" value="10" />
-                      <span>Video</span>
-                    </label>
-                    <label class="form-control">
-                      <input type="checkbox" name="checkbox" value="10" />
-                      <span>Location</span>
-                    </label>
-                  </div>
-                  <div class="col-md-4">
-                    <label class="form-control">
-                      <input type="checkbox" name="checkbox" value="10" />
-                      <span>InApp Purchase</span>
-                    </label>
-                    <label class="form-control">
-                      <input type="checkbox" name="checkbox" value="10" />
-                      <span>Calling</span>
-                    </label>
-                    <label class="form-control">
-                      <input type="checkbox" name="checkbox" value="10" />
-                      <span>SMS</span>
-                    </label>
-                    <label class="form-control">
-                      <input type="checkbox" name="checkbox" value="10" />
-                      <span>Ordering</span>
-                    </label>
-                  </div>
-                  <div class="col-md-4">
-                    <label class="form-control">
-                      <input type="checkbox" name="checkbox" value="10" />
-                      <span>Tracking Location</span>
-                    </label>
-                    <label class="form-control">
-                      <input type="checkbox" name="checkbox" value="10" />
-                      <span>Calendar</span>
-                    </label>
-                    <label class="form-control">
-                      <input type="checkbox" name="checkbox" value="10" />
-                      <span>Video Streaming</span>
-                    </label>
-                    <label class="form-control">
-                      <input type="checkbox" name="checkbox" value="10" />
-                      <span>Notification</span>
-                    </label>
+
+                  <div class="buttons">
+                    <button onclick="goBack()">Back</button>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="bg-light p-3 h-100 d-flex flex-column justify-content-center">
-                <div class="d-flex justify-content-center">
-                  <h4 class="right-heading">Total Cost</h4>
-                </div>
-                <div>
-                  <div class="d-flex align-items-center justify-content-center">
-                    <div><i class="fa fa-lock lock-icon" aria-hidden="true"></i></div>
-                    <div class=" dollar-sign"> $ </div>
-                    <div class="hidden-price" id="total">0.00</div>
-                  </div>
-                </div>
-                <div class="pt-2">
-                  <p class="right-pannel-pera mx-auto text-center">
-                    Please provide your contacts to see the quote instantly
-                  </p>
-                </div>
-                <div class="d-flex justify-content-center">
-                  <img src="img/arrow.svg" alt="">
-                </div>
-                <div class="pt-3 pb-3">
-                  <button class="right-pannel-button">GET FREE QUOTE</button>
-                </div>
-              </div>
-            </div>
-          </div>
+          </section>
         </div>
       </div>
     </div>
   </div>
+
   <a href="tel:8882279908" class="whatsapp-widget">
     <img src="img/whatsapp-icon.svg" alt="" srcset="" />
   </a>
@@ -1153,6 +1010,7 @@
   <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
   <!-- <script src="https://intl-tel-input.com/node_modules/intl-tel-input/build/js/intlTelInput.js"></script> -->
   <script src="script.js" async defer></script>
+  <script src="calculator.js" async defer></script>
   <!-- Start of HubSpot Embed Code -->
   <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/22613743.js"></script>
   <!-- End of HubSpot Embed Code -->
