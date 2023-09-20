@@ -84,6 +84,15 @@ $(function () {
             mobileFirst: true
         });
 
+        $('.hot-offer').slick({
+            autoplay: true,
+            autoplaySpeed: 5000,
+            slidesToShow: 1,
+            arrows: false,
+            dots: true,
+            mobileFirst: true
+        });
+
         $('.reviewSlider').slick({
             autoplay: true,
             autoplaySpeed: 5000,

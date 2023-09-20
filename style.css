@@ -15,6 +15,45 @@ body .mobile-cta {
   right: 5px;
 }
 
+body>section .hot-offer ul {
+  display: block !important;
+}
+
+.hot-offer {
+  display: flex;
+  justify-content: center;
+}
+
+.hot-offer .offerDv {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.hot-offer .offerDv:hover {
+  scale: 1.05;
+  box-shadow: 0px 0px 5px rgba(104, 131, 175, 0.3);
+}
+
+.hot-offer .offerDv:not(:last-child) {
+  border-right: 2px solid var(--button-color);
+}
+
+.hot-offer .offerDv img {
+  margin: 0px auto;
+}
+
+.hot-offer .offerDv h6 {
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+}
+
 body .mobile-cta .footicon {
   cursor: pointer;
   background: #1dbc55;
@@ -2012,6 +2051,37 @@ body>header#myHeader {
 
 }
 
+
+
+body>section.portfolioDvinfo>.container>h2 {
+  font-size: 2.2rem;
+  line-height: 1;
+  font-weight: 700;
+  margin: 0 0 90px;
+  color: #fff;
+  position: relative;
+}
+
+body>section.portfolioDvinfo>.container>h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  margin: auto;
+  width: 30px;
+  height: 2px;
+  background: var(--button-color);
+}
+
+@media (max-width: 767px) {
+  body>section.portfolioDvinfo>.container>h2 {
+    font-size: 20px;
+    margin: 0px 0px 30px;
+    line-height: 1.2;
+  }
+}
+
 body>section.portfolioDvinfo {
 
   position: relative;
@@ -2023,6 +2093,8 @@ body>section.portfolioDvinfo {
   background-repeat: no-repeat;
 
   background-size: cover;
+
+  padding: 50px 0 50px 0;
 
 }
 
@@ -2040,7 +2112,7 @@ body>section.portfolioDvinfo .portfolioDv .row>div {
 
   align-items: center;
 
-  min-height: 100vh;
+  /* min-height: 100vh; */
 
 }
 
@@ -2456,13 +2528,13 @@ body>section.portfolioDvinfo .arrowsDv {
 
   justify-content: center;
 
-  position: absolute;
+  /* position: absolute;
 
   left: 0px;
 
   right: 0px;
 
-  bottom: 30px;
+  bottom: 30px; */
 
 }
 
@@ -3323,7 +3395,8 @@ body>section.ourProcess .offers .mobil img {
 
 body>section.clientLogo {
   padding: 40px 0;
-  background: var(--primary);
+  /* background: var(--primary); */
+  background: linear-gradient(to bottom, #151522 0%, #000 101%);
 
 
 }
@@ -3595,7 +3668,7 @@ body>section.bannerdv .formDv {
   padding: 25px 0;
 }
 
-h1.ub-serv-heading {
+h2.ub-serv-heading {
 
   text-align: center;
 
@@ -3769,13 +3842,31 @@ h1.ub-serv-heading {
 }
 
 
-h1.ub-serv-heading {
+h2.ub-serv-heading {
+  font-size: 2.2rem;
+  line-height: 1;
+  font-weight: 700;
+  margin: 0 0 90px;
+  color: #fff;
+  position: relative;
 
-  text-align: center;
+  /* text-align: center;
   font-size: 32px;
   width: 80%;
-  margin: 0px auto 70px auto;
+  margin: 0px auto 70px auto; */
 
+}
+
+h2.ub-serv-heading::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  margin: auto;
+  width: 30px;
+  height: 2px;
+  background: var(--primary);
 }
 
 .ub-serv-col {
@@ -3873,6 +3964,10 @@ h1.ub-testi-heading:before {
     justify-content: center;
   }
 
+  .ub-serv-col img {
+    margin: 0px auto;
+  }
+
   .ub-serv-col h2 {
     font-size: 18px;
     display: flex;
@@ -3880,7 +3975,7 @@ h1.ub-testi-heading:before {
     justify-content: center;
   }
 
-  h1.ub-serv-heading {
+  h2.ub-serv-heading {
     text-align: center;
     font-size: 20px;
     width: 100%;
@@ -4278,7 +4373,7 @@ h1.ub-testi-heading:before {
     position: absolute;
     left: 0;
     right: 0px;
-    top: 90px;
+    top: 105px;
     vertical-align: middle;
   }
 
@@ -4503,6 +4598,7 @@ body>section.qualities .qualities-card h6 {
 }
 
 body>section.qualities .qualities-card p {
+  font-size: 16px;
   margin: 0;
   line-height: 21px;
 }
@@ -5050,10 +5146,8 @@ input[type="checkbox"]:checked::before {
   flex-direction: row;
   justify-content: center;
   gap: 1rem;
-  /* justify-content: space-around; */
   margin-bottom: 1.5rem;
   flex-wrap: wrap;
-
 }
 
 .option {
@@ -5068,7 +5162,7 @@ input[type="checkbox"]:checked::before {
   padding: 1rem 0rem;
 }
 
-.option.show {
+.option.active {
   border: 2px solid var(--button-color);
 }
 
@@ -5085,9 +5179,9 @@ input[type="checkbox"]:checked::before {
 }
 
 .option input {
-  position: absolute;
+  /* position: absolute; */
   display: none;
-  color: #fff !important;
+  /* color: #fff !important; */
 }
 
 .option input:checked+span {
@@ -5106,4 +5200,49 @@ input[type="checkbox"]:checked::before {
   color: var(--white);
   padding: 5px 50px;
   border-radius: 0px;
+}
+
+/*Calculator Result*/
+
+.calculator-result {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.calculator-result h2 {
+  font-size: 1.4rem;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.calculator-result .calc-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.calculator-result .calc-card {
+  padding: 1rem;
+  /* border: 2px solid var(--button-color); */
+  background-color: var(--button-color);
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator-result .calc-card h6 {
+  font-size: 1rem;
+}
+
+.calculator-result .calc-card h4 {
+  font-size: 2.5rem;
+}
+
+.formContainerv2 {
+  border-left: none;
 }
