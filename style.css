@@ -3680,11 +3680,20 @@ h2.ub-serv-heading {
 
   padding-bottom: 15px;
 
+  position: relative;
+
 }
 
-.ub-serv-col .serv-no {
 
-  font-size: 36px;
+.ub-serv-col .serv-custom-no {
+
+  font-size: 86px;
+  font-weight: 500;
+  position: absolute;
+  top: 36px;
+  right: 12px;
+  line-height: 0;
+  opacity: 0.2;
 
 }
 

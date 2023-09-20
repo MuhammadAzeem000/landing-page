@@ -212,7 +212,7 @@
           </div>
           <div class="col-md-4 d-none d-md-block">
             <div class="mob-container">
-              <img src="img/mobile-mockup.webp">
+              <img src="img/device.png" height="550">
               <div class="mob-slider">
                 <div id="mobilePortfolio">
                   <img src="img/mobile-mockup-05.webp" alt="" srcset="" />
@@ -565,7 +565,7 @@
       </div>
       <div class="row mobiSlider">
         <div class="col-md-4 ub-serv-col">
-          <!-- <div class="serv-no">01</div> -->
+          <div class="serv-custom-no">01</div>
           <img src="./img/other-icon/idea.svg" class="mb-3" height="60" alt="" />
           <h2>Share your idea</h2>
           <p>PEBTECH Solutions is the leading mobile app development agency in USA, providing exceptional project
@@ -574,7 +574,7 @@
           <a href="#footer-form-area" class="info1dv">Get Free Consultation</a>
         </div>
         <div class="col-md-4 ub-serv-col">
-          <!-- <div class="serv-no">02</div> -->
+          <div class="serv-custom-no">02</div>
           <img src="./img/other-icon/visualize.svg" class="mb-3" height="60" alt="" />
           <h2>Visualize your idea</h2>
           <p>Our mobile app development services in USA have been acknowledged by the top directories and news agencies.
@@ -582,7 +582,7 @@
           <a href="#footer-form-area" class="info1dv">Get Free Demo</a>
         </div>
         <div class="col-md-4 ub-serv-col">
-          <!-- <div class="serv-no">03</div> -->
+          <div class="serv-custom-no">03</div>
           <img src="./img/other-icon/build.svg" class="mb-3" height="60" alt="" />
           <h2>Build your idea</h2>
           <p>We continue to provide the best mobile app services in USA to our clients, maintaining a 100% satisfaction
@@ -592,6 +592,51 @@
       </div>
     </div>
   </section>
+
+  <!-- App Screenshots Start-->
+
+  <section style="padding: 60px 0px;">
+    <div class="app-screenshot">
+      <div class="oc-item mx-5" style="width: 348px;">
+        <a href="https://canvastemplate.com/demos/landing/images/carousel/1.png">
+          <img src="https://canvastemplate.com/demos/landing/images/carousel/1.png" width="348" alt="Image 1">
+        </a>
+      </div>
+      <div class="oc-item mx-5" style="width: 348px;">
+        <a href="https://canvastemplate.com/demos/landing/images/carousel/2.png">
+          <img src="https://canvastemplate.com/demos/landing/images/carousel/2.png" width="348" alt="Image 2">
+        </a>
+      </div>
+      <div class="oc-item mx-5" style="width: 348px;">
+        <a href="https://canvastemplate.com/demos/landing/images/carousel/3.png">
+          <img src="https://canvastemplate.com/demos/landing/images/carousel/3.png" width="348" alt="Image 3">
+        </a>
+      </div>
+      <div class="oc-item mx-5" style="width: 348px;">
+        <a href="https://canvastemplate.com/demos/landing/images/carousel/4.png">
+          <img src="https://canvastemplate.com/demos/landing/images/carousel/4.png" width="348" alt="Image 4">
+        </a>
+      </div>
+      <div class="oc-item mx-5" style="width: 348px;">
+        <a href="https://canvastemplate.com/demos/landing/images/carousel/5.png">
+          <img src="https://canvastemplate.com/demos/landing/images/carousel/5.png" width="348" alt="Image 5">
+        </a>
+      </div>
+      <div class="oc-item mx-5" style="width: 348px;">
+        <a href="https://canvastemplate.com/demos/landing/images/carousel/6.png">
+          <img src="https://canvastemplate.com/demos/landing/images/carousel/6.png" width="348" alt="Image 6">
+        </a>
+      </div>
+      <div class="oc-item mx-5" style="width: 348px;">
+        <a href="https://canvastemplate.com/demos/landing/images/carousel/7.png">
+          <img src="https://canvastemplate.com/demos/landing/images/carousel/7.png" width="348" alt="Image 7">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- App Screenshots End-->
+
   <section class="notchDv">
     <div class="container">
       <div class="row justify-content-center">
@@ -1131,6 +1176,16 @@
   <!-- End TrustBox script -->
   <script>
     AOS.init();
+
+    $('.app-screenshot').slick({
+      // centerMode: true,
+      // centerPadding: '60px',
+      // focusOnSelect: true,
+      infinite: true,
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      dots: true
+    });
   </script>
 </body>
 
