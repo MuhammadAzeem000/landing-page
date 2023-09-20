@@ -48,6 +48,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css">
   <!-- <link rel="stylesheet" href="https://intl-tel-input.com/node_modules/intl-tel-input/build/css/intlTelInput.css" /> -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -87,10 +88,10 @@
           <div class="contentdv text-center">
             <section class="contactFormDv" style="background: none;">
               <div class="textCol pt-0">
-                <h2> GOT AN
+                <h2 data-aos="fade-up"> GOT AN
                   <span>ID<span class="color-red">E</span>A?</span>
                 </h2>
-                <h3>Let's work together!</h3>
+                <h3 data-aos="fade-up">Let's work together!</h3>
               </div>
             </section>
 
@@ -135,25 +136,25 @@
   <section class="qualities container-fluid">
     <div class="row mobiSlider">
       <div class="col-md-3">
-        <div class="qualities-card">
+        <div class="qualities-card" data-aos="fade-up">
           <h6>195+</h6>
           <p>Applications Developed and Designed</p>
         </div>
       </div>
       <div class="col-md-3">
-        <div class="qualities-card">
+        <div class="qualities-card" data-aos="fade-up">
           <h6>150+</h6>
           <p>Developers & Engineers Under One Roof</p>
         </div>
       </div>
       <div class="col-md-3">
-        <div class="qualities-card">
+        <div class="qualities-card" data-aos="fade-up">
           <h6>20+</h6>
           <p>Years in Software Development Business</p>
         </div>
       </div>
       <div class="col-md-3">
-        <div class="qualities-card">
+        <div class="qualities-card" data-aos="fade-up">
           <h6>4.5M+</h6>
           <p>Clients apps downloaded on App Store & Play Store</p>
         </div>
@@ -162,7 +163,7 @@
   </section>
   <section class="ourProcess" id="serviceDv">
     <div class="container">
-      <h2>Our comfort zones which convert your brilliant ideas into a digital app.</h2>
+      <h2 data-aos="fade-up">Our comfort zones which convert your brilliant ideas into a digital app.</h2>
     </div>
     <div class="offers">
       <div class="container">
@@ -228,7 +229,7 @@
           <div class="col-md-4 col02">
             <div class="item">
               <div class="row no-gutters">
-                <figure class="col-3"><img src="img/other-icon/ai-icon.svg" /></figure>
+                <figure class="col-3"><img src="img/other-icon/iot-icon.svg" /></figure>
                 <div class="txtDv col-9">
                   <h3>IoT Application</h3>
                   <p>PEBTECH Solutions provides user-friendly IoT applications to its clients in USA. </p>
@@ -1104,6 +1105,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/pdfmake.min.js"></script>
 
   <script src="script.js" async defer></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- <script src="calculator.js" async defer></script> -->
   <script src="calc.js" async defer></script>
   <!-- Start of HubSpot Embed Code -->
@@ -1127,6 +1129,9 @@
   <!-- TrustBox script -->
   <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
   <!-- End TrustBox script -->
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
