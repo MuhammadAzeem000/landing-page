@@ -1390,7 +1390,7 @@ body>section.reviewDv h2 {
 
   color: #fff;
 
-  font-size: 3rem;
+  font-size: 2.2rem;
 
   line-height: 1;
 
@@ -3526,7 +3526,7 @@ body>section.ourProcess .offers .mobil img {
 body>section.clientLogo {
   padding: 40px 0;
   /* background: var(--primary); */
-  background: linear-gradient(to bottom, #151522 0%, #000 101%);
+  background: linear-gradient(to bottom, #000 0%, #151522 101%);
 
 
 }
@@ -5380,13 +5380,14 @@ input[type="checkbox"]:checked::before {
 
 /*app-slider*/
 
-.app-slider{
+.app-slider {
   background-image: url(img/appSliderBack.webp);
   background-position: bottom;
   background-size: cover;
   position: relative;
 }
-.app-slider-overlay{
+
+.app-slider-overlay {
   position: absolute;
   background-color: var(--primary);
   opacity: 0.8;
@@ -5394,12 +5395,14 @@ input[type="checkbox"]:checked::before {
   width: 100%;
   top: 0;
 }
-.app-slider h2{
-    font-size: 3rem;
-    line-height: 1;
-    font-weight: 600;
+
+.app-slider h2 {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 600;
 }
-.app-slider p{
+
+.app-slider p {
   line-height: 1.8;
   font-size: 16px;
   font-weight: 400;
@@ -5411,16 +5414,17 @@ input[type="checkbox"]:checked::before {
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  z-index: 1;
 }
 
 .mobile-screenshots {
   position: absolute;
   top: 0;
-  width: 100%;
+  width: calc(100% - 66px);
   height: 100%;
 }
 
-.app-slider .sliderMobile{
+.app-slider .sliderMobile {
   width: 300px;
   height: auto;
   margin-top: -70px;
@@ -5428,44 +5432,48 @@ input[type="checkbox"]:checked::before {
   padding: 20px 0px;
 
 }
-.appleIconSlider{
+
+.appleIconSlider {
   height: 20px;
   margin-right: 5px;
   margin-top: -5px;
 }
 
-.app-slider button{
+.app-slider button {
   border: none;
 }
-.screenshots-child{
+
+.screenshots-child {
   height: 432px;
-  margin-top: 28px;
-  margin-left: 45px;
-  
+  /* margin-top: 28px; */
+  /* margin-left: 45px; */
+
 }
-.screenshots-child-subchild{
-width: auto;
-height: 100%;
+
+.screenshots-child-subchild {
+  width: auto;
+  height: 100%;
 
 }
 
 @media (max-width: 767px) {
 
-  .app-slider .sliderMobile{
+  .app-slider .sliderMobile {
     margin-top: 0px;
-    margin-bottom: 0px;  
+    margin-bottom: 0px;
   }
 
-  .screenshots-child{
+  .screenshots-child {
     height: 432px;
     margin-top: 98px;
     margin-left: 50px;
-    
+
   }
-  .mobile-container{
+
+  .mobile-container {
     display: flex;
     justify-content: center;
   }
-  
+
 
 }
