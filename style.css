@@ -36,6 +36,29 @@
   transform: translateY(-4px);
 }
 
+.title-white {
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+
+.title-white::before,
+.title-white::after {
+  content: '';
+  width: 50px;
+  height: 2px;
+  display: inline-block;
+  background-color: #fff;
+  margin: 0 15px;
+  -webkit-transform: translateY(-4px);
+  -ms-transform: translateY(-4px);
+  transform: translateY(-4px);
+}
+
 .heading {
   font-size: 2.2rem;
   line-height: 1.3;
@@ -60,6 +83,22 @@
   color: #fff;
   margin: 0;
   line-height: 21px;
+}
+
+.industry-card {
+  background-image: url(https://www.matellio.co.uk/wp-content/uploads/2019/07/banner-1.jpg);
+  position: relative;
+}
+
+.industry-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--primary);
+  opacity: 0.5;
 }
 
 .btn-animation-1 {
@@ -155,6 +194,104 @@
   }
 
 }
+
+/* APP Portfolio Start */
+
+.gallery-slide .slick-list {
+  background: url('img/app-slider (2).webp') no-repeat center right / auto 100%;
+  margin-top: -50px;
+  margin-bottom: -50px;
+  overflow: hidden;
+}
+
+.gallery-slide .item {
+  margin: 75px auto;
+}
+
+.gallery-slide .item img {
+  border-radius: 2px;
+}
+
+.gallery-slide .item img {
+  margin: 0px 0px 0px calc(100% - 265px);
+}
+
+/* APP Portfolio End */
+
+
+/*Multiple Images Start*/
+
+.hero-1 {
+  padding: 60px 0px;
+  overflow: hidden;
+  background: var(--primary);
+  position: relative;
+}
+
+.hero-1::before {
+  content: '';
+  width: 70px;
+  height: 100%;
+  background-color: var(--button-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.hero-1::after {
+  content: '';
+  background: rgb(33, 33, 45);
+  background: linear-gradient(90deg, rgba(33, 33, 45, 1) 0%, rgba(255, 255, 255, 0) 50%, rgba(21, 21, 34, 1) 100%);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.as-item {}
+
+.as-item img {
+  width: 250px;
+  height: auto;
+  margin: 0px auto;
+
+}
+
+.app-screenshot .slick-slide {
+  display: flex;
+  justify-content: center;
+  transition: all 200ms ease-in;
+}
+
+.app-screenshot .slick-current {
+  transform: scale(1) !important;
+}
+
+.app-screenshot .slick-slide {
+  transform: scale(0.8);
+}
+
+.hero-mob {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.hero-mob img {
+  height: auto;
+  width: 280px;
+}
+
+/*Multiple Images End*/
 
 .btn {
   border-radius: 0px;
@@ -1397,7 +1534,7 @@ body>section.reviewDv {
 
   background: var(--primary);
 
-  padding: 60px 0 60px;
+  padding: 70px 0px;
 
   width: 100%;
 
