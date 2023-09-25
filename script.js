@@ -4,7 +4,9 @@ $(function () {
         e.preventDefault();
         $('html, body').animate({ scrollTop: $(slidingID).offset().top - 1 }, 1000);
     });
+
     $('[href="#"]').attr('href', 'javascript:;');
+
     $('.logosSlider').slick({
         autoplay: true,
         autoplaySpeed: 2000,
@@ -44,6 +46,7 @@ $(function () {
             }
         ]
     });
+
     $('.portfolioDv').slick({
         infinite: true,
         autoplay: true,
@@ -54,6 +57,7 @@ $(function () {
         slidesToShow: 1,
         dots: false
     });
+
     $('.portfolioDvinfo .arrowsDv a').on('click', function () {
         if ($(this).hasClass('pagerDvnext')) {
             $('.portfolioDv').slick('slickNext');
@@ -62,6 +66,7 @@ $(function () {
             $('.portfolioDv').slick('slickPrev');
         }
     });
+
     $('.banSlider, .serviceSlider').slick({
         autoplay: true,
         dots: false,
@@ -73,6 +78,7 @@ $(function () {
         fade: true,
         cssEase: 'linear'
     });
+
     if ($(window).width() < 768) {
         $('.noslide').remove();
         $('.mobiSlider').slick({
@@ -80,7 +86,7 @@ $(function () {
             autoplaySpeed: 5000,
             slidesToShow: 1,
             arrows: false,
-            dots: true,
+            dots: false,
             mobileFirst: true
         });
 
@@ -98,9 +104,11 @@ $(function () {
         $('.textslider').css({ 'width': topwidtH });
 
     }
+
     $(".formdiv .toggle span").click(function () {
         $('.formdiv').addClass("popformkhulwana");
     });
+
     $(".formdiv .toggle .croxDv").click(function () {
         $('.formdiv').removeClass("popformkhulwana");
     });
@@ -108,6 +116,7 @@ $(function () {
     $('#appCalculator').on('show.bs.collapse', function () {
         document.querySelector('#accordion-icon').classList.add('rotate');
     })
+
     $('#appCalculator').on('hidden.bs.collapse', function () {
         document.querySelector('#accordion-icon').classList.remove('rotate');
     })
@@ -119,7 +128,6 @@ $(function () {
 
     var header = document.getElementById("myHeader");
     header.classList.add('sticky-header');
-
 
     $(".lazy").slick({
         lazyLoad: 'ondemand', // ondemand progressive anticipated
@@ -147,6 +155,130 @@ $(function () {
         dots: false,
         fade: true,
     });
+
+    $('#hotOffer').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+
+    $('.app-screenshot').slick({
+        infinite: true,
+        focusOnSelect: true,
+        centerMode: true,
+        centerPadding: "10px",
+        slidesToShow: 5,
+        dots: false,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        waitForAnimate: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    arrows: true,
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+
+    $('#portfolio-screenshot').slick({
+        slidesToShow: 3,
+        dots: false,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        asNavFor: '.app-sliders',
+        responsive: [
+            {
+                breakpoint: 1230,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 860,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    })
+
+    $('.app-sliders').slick({
+        slidesToShow: 1,
+        dots: false,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        asNavFor: '#portfolio-screenshot'
+    })
+
+    $('#industry-cards').slick({
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 9000,
+        infinite: true,
+    });
+
+    AOS.init();
 
     const forms = document.querySelectorAll("form");
 
@@ -292,25 +424,3 @@ function toggleChild() {
         }
     }
 }
-
-function calculateTotal() {
-    const checkboxes = document.querySelectorAll('#calculatorModal input[type="checkbox"]');
-    let total = 0;
-
-    checkboxes.forEach(function (checkbox) {
-        if (checkbox.checked) {
-            total += (Number(checkbox.value));
-
-        }
-    });
-
-    // Update the total displayed on the page
-    document.getElementById('total').innerText = total;
-}
-
-// Add event listeners to checkboxes to trigger the calculation
-var checkboxes = document.querySelectorAll('#calculatorModal input[type="checkbox"]');
-checkboxes.forEach(function (checkbox) {
-    checkbox.addEventListener('change', calculateTotal);
-    checkbox.addEventListener('change', toggleChild)
-});

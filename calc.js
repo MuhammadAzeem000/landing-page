@@ -1,5 +1,3 @@
-// <!-- ... (previous HTML code) ... -->
-
 // Include pdfmake library
 const script = document.createElement('script');
 script.src = 'https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/vfs_fonts.js';
@@ -9,6 +7,41 @@ const quiz = [
     {
         question: "Choose a Service:",
         options: [
+            {
+                text: "Branding",
+                type: "single",
+                next: [
+                    {
+                        question: "Choose Service:",
+                        options: [
+                            {
+                                text: "Logo Design", type: "single", next: [{
+                                    question: "How many logo versions you want?",
+                                    options: [
+                                        { text: "01 - 05", type: "single" },
+                                        { text: "10 - 15", type: "single" },
+                                        { text: "15 - 20", type: "single" },
+                                    ],
+                                }]
+                            },
+                            {
+                                text: "Broucher Design", type: "single", next: [{
+                                    question: "How many number of pages you want?",
+                                    options: [
+                                        { text: "01 - 05", type: "single" },
+                                        { text: "10 - 15", type: "single" },
+                                        { text: "15 - 20", type: "single" },
+                                        { text: "20 - 25", type: "single" },
+                                    ],
+                                }]
+                            },
+                            {
+                                text: "Complete Branding", type: "single"
+                            },
+                        ],
+                    },
+                ],
+            },
             {
                 text: "UI/UX Design",
                 type: "single",
@@ -191,7 +224,6 @@ function isCheck() {
 
 }
 
-
 function displayQuestion() {
     const questionElement = document.getElementById("question");
     const optionsElement = document.getElementById("options");
@@ -315,3 +347,51 @@ function showResult() {
 }
 
 displayQuestion();
+
+
+
+
+// function calculateTotal() {
+//     const checkboxes = document.querySelectorAll('#calculatorModal input[type="checkbox"]');
+//     let total = 0;
+
+//     checkboxes.forEach(function (checkbox) {
+//         if (checkbox.checked) {
+//             total += (Number(checkbox.value));
+
+//         }
+//     });
+
+//     // Update the total displayed on the page
+//     document.getElementById('total').innerText = total;
+// }
+
+// // Add event listeners to checkboxes to trigger the calculation
+// var checkboxes = document.querySelectorAll('#calculatorModal input[type="checkbox"]');
+// checkboxes.forEach(function (checkbox) {
+//     checkbox.addEventListener('change', calculateTotal);
+//     checkbox.addEventListener('change', toggleChild)
+// });
+
+// On before slide change
+// $('#industry-cards').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+//     // slick-current slick-active
+//     console.log(slick.$slides[currentSlide])
+//     console.log("beforeChange", event, slick, currentSlide, nextSlide);
+// });
+
+// // Function to trigger AOS animation
+// function animateOnClick(Element) {
+//     // Add AOS attributes to the element
+//     document.getElementById(Element).setAttribute('data-aos', 'fade-up');
+//     document.getElementById(Element).setAttribute('data-aos-duration', '1000');
+
+//     // Initialize AOS
+//     AOS.init();
+
+//     // Trigger AOS animation
+//     AOS.refreshHard();
+// }
+
+// // Add a click event listener to the element
+// document.getElementById('myElement').addEventListener('click', animateOnClick);

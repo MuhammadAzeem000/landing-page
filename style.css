@@ -3,90 +3,10 @@
   --primary: #151522;
 }
 
-.title {
-  color: #fff;
-  position: relative;
-  display: inline-block;
-  letter-spacing: 1.5px;
-  font-weight: 600;
-  font-size: 1rem;
-}
-
-.title::after {
-  content: '';
-  width: 50px;
-  height: 2px;
-  display: inline-block;
-  background-color: var(--button-color);
-  margin: 0 15px;
-  -webkit-transform: translateY(-4px);
-  -ms-transform: translateY(-4px);
-  transform: translateY(-4px);
-}
-
-.title::before {
-  content: '';
-  width: 50px;
-  height: 2px;
-  display: inline-block;
-  background-color: var(--button-color);
-  margin: 0 15px;
-  -webkit-transform: translateY(-4px);
-  -ms-transform: translateY(-4px);
-  transform: translateY(-4px);
-}
-
-.title-white {
-  color: #fff;
-  position: relative;
-  display: inline-block;
-  letter-spacing: 1.5px;
-  font-weight: 600;
-  font-size: 1rem;
-}
-
-
-.title-white::before,
-.title-white::after {
-  content: '';
-  width: 50px;
-  height: 2px;
-  display: inline-block;
-  background-color: #fff;
-  margin: 0 15px;
-  -webkit-transform: translateY(-4px);
-  -ms-transform: translateY(-4px);
-  transform: translateY(-4px);
-}
-
-.heading {
-  font-size: 2.2rem;
-  line-height: 1.3;
-  font-weight: 700;
-  color: #fff;
-  text-align: center;
-  margin: 0;
-}
-
-
-.card-title {
-  font-size: 2.2rem;
-  line-height: 1.3;
-  font-weight: 500;
-  color: #fff;
-  text-align: center;
-  margin: 0;
-}
-
-.card-text {
-  font-size: 16px;
-  color: #fff;
-  margin: 0;
-  line-height: 21px;
-}
-
 .industry-card {
   background-image: url(https://www.matellio.co.uk/wp-content/uploads/2019/07/banner-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
 }
 
@@ -197,13 +117,6 @@
 
 /* APP Portfolio Start */
 
-.gallery-slide .slick-list {
-  background: url('img/app-slider (2).webp') no-repeat center right / auto 100%;
-  margin-top: -50px;
-  margin-bottom: -50px;
-  overflow: hidden;
-}
-
 .gallery-slide .item {
   margin: 75px auto;
 }
@@ -228,8 +141,7 @@
   position: relative;
 }
 
-.hero-1::before {
-  content: '';
+/* .hero-1>.text-box {
   width: 70px;
   height: 100%;
   background-color: var(--button-color);
@@ -237,7 +149,7 @@
   top: 0;
   left: 0;
   z-index: 1;
-}
+} */
 
 .hero-1::after {
   content: '';
@@ -267,7 +179,8 @@
   transition: all 200ms ease-in;
 }
 
-.app-screenshot .slick-current {
+
+.app-screenshot .slick-center {
   transform: scale(1) !important;
 }
 
@@ -1032,14 +945,6 @@ body .bannerdv .SopsDv {
   justify-content: flex-start;
 }
 
-body .bannerdv {
-  background: url(img/mash-bg-1.webp)no-repeat center center/cover;
-  display: flex;
-  background-size: cover;
-  min-height: 100vh;
-  padding-top: 25vh;
-  position: relative;
-}
 
 body .bannerdv h1 {
   font-size: 38px;
@@ -1530,17 +1435,7 @@ body>section.featureDv .logosSlider .slick-dots li.slick-active button {
 
 }
 
-body>section.reviewDv {
 
-  background: var(--primary);
-
-  padding: 70px 0px;
-
-  width: 100%;
-
-  overflow: hidden;
-
-}
 
 body>section.reviewDv .row>div {
 
@@ -3413,7 +3308,7 @@ body>footer .container .row .footerbagdeDv .infodb figure {
 
 
 
-body>footer .container .row.copyrightDv {
+body>footer .container-fluid .row.copyrightDv {
 
   padding: 10px 0 0;
 
@@ -3422,7 +3317,7 @@ body>footer .container .row.copyrightDv {
 
 }
 
-body>footer .container .row.copyrightDv .col-md-12 h2 {
+body>footer .container-fluid .row.copyrightDv .col-md-12 h2 {
 
   font-size: 12px;
 
@@ -3498,7 +3393,7 @@ body>section.ourProcess .markdv img {
 
 }
 
-body>section.ourProcess h2 {
+/* body>section.ourProcess h2 {
 
   font-size: 2.2rem;
 
@@ -3514,7 +3409,7 @@ body>section.ourProcess h2 {
 
   color: #fff;
 
-}
+} */
 
 /* body>section.ourProcess h2:before {
   content: "";
@@ -3720,7 +3615,7 @@ body>section.clientLogo p {
 
 }
 
-.clientbadge-heading h2 {
+/* .clientbadge-heading h2 {
   font-size: 2.2rem;
   text-align: center;
   font-weight: bold;
@@ -3731,9 +3626,9 @@ body>section.clientLogo p {
   line-height: 1.3;
   margin-bottom: 40px;
   color: #fff;
-}
+} */
 
-.clientbadge-heading h2:before {
+/* .clientbadge-heading h2:before {
   content: "";
   display: block;
   width: 30px;
@@ -3745,7 +3640,7 @@ body>section.clientLogo p {
   right: 0px;
   bottom: 28px;
   vertical-align: middle;
-}
+} */
 
 body>section.clientLogo p span {
 
@@ -4411,12 +4306,6 @@ h1.ub-testi-heading:before {
     opacity: 1;
   }
 
-  body>section.reviewDv {
-    padding: 0px 0 60px;
-    width: 100%;
-    overflow: hidden;
-  }
-
   body>section.reviewDv .row>div {
     position: relative;
   }
@@ -4609,11 +4498,11 @@ h1.ub-testi-heading:before {
     overflow: hidden;
   }
 
-  body>section.ourProcess h2 {
+  /* body>section.ourProcess h2 {
     font-size: 20px;
     margin: 0px 0px 30px;
     line-height: 1.2;
-  }
+  } */
 
   body>section.ourProcess .offers .col01 {
     text-align: left;
@@ -4808,12 +4697,6 @@ h1.ub-testi-heading:before {
     text-transform: uppercase;
     line-height: 1.3;
     text-align: center;
-  }
-
-  body .bannerdv {
-    padding-bottom: 10vh;
-    padding-top: 22vh;
-    background-position: left;
   }
 
   .ub-serv-section {
@@ -5143,10 +5026,20 @@ body>section.qualities .slick-dots li.slick-active button:before {
   z-index: 1;
 }
 
+.mob-calculator {
+  background-color: var(--button-color);
+  transform: translate(1%, 0%);
+  width: calc(100% - 10px);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  border-radius: 45px;
+}
+
 .mob-slider {
   position: absolute;
   top: 0;
-  width: 100%
+  width: 100%;
 }
 
 .small,
@@ -5559,7 +5452,7 @@ input[type="checkbox"]:checked::before {
 }
 
 .app-slider h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 1;
   font-weight: 600;
 }
@@ -5639,3 +5532,169 @@ input[type="checkbox"]:checked::before {
 
 
 }
+
+
+/* // Extra small devices (portrait phones, less than 576px) */
+/* // No media query for `xs` since this is the default in Bootstrap */
+
+.title,
+.title-white {
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  font-size: 0.7rem;
+}
+
+.title::before,
+.title::after,
+.title-white::before,
+.title-white::after {
+  content: '';
+  width: 25px;
+  height: 2px;
+  display: inline-block;
+  margin: 0 15px;
+  -webkit-transform: translateY(-4px);
+  -ms-transform: translateY(-4px);
+  transform: translateY(-4px);
+}
+
+.title::before,
+.title::after {
+  background-color: var(--button-color);
+}
+
+
+.title-white::before,
+.title-white::after {
+  background-color: #fff;
+}
+
+.heading {
+  font-size: 1.5rem;
+  line-height: 1.3;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+
+.card-title {
+  color: #fff;
+  font-size: 1.4rem;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.text {
+  font-size: 16px;
+  color: #fff;
+  line-height: 21px;
+}
+
+.card-text {
+  font-size: 16px;
+  color: #fff;
+  margin: 0;
+  line-height: 21px;
+}
+
+body .bannerdv {
+  background: url(img/mash-bg-1.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding-top: 22vh;
+  padding-bottom: 10vh;
+  position: relative;
+  background-position: left;
+}
+
+.cta-font {
+  font-size: 1rem;
+}
+
+.bg-color-01 {
+  background-color: var(--primary);
+}
+
+.bg-color-02 {
+  background-color: var(--button-color);
+}
+
+body>section.reviewDv {
+  padding: 60px 0px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.gallery-slide .slick-list {
+  background: url('./img/white-iphone.webp') no-repeat center right / auto 100%;
+  overflow: hidden;
+}
+
+
+/* // Extra small devices (portrait phones, less than 576px) */
+/* // No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) sm */
+@media (min-width: 576px) {}
+
+/* // Medium devices (tablets, 768px and up) md */
+@media (min-width: 768px) {
+
+  .title,
+  .title-white {
+    font-size: 1rem;
+  }
+
+  .title::before,
+  .title::after,
+  .title-white::before,
+  .title-white::after {
+    width: 50px;
+  }
+
+  .heading {
+    font-size: 2.2rem;
+  }
+
+
+  .card-title {
+    font-size: 2.2rem;
+    line-height: 1.3;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+  }
+
+  .card-text {
+    font-size: 16px;
+    color: #fff;
+    margin: 0;
+    line-height: 21px;
+  }
+
+  body .bannerdv {
+    padding-top: 25vh;
+    background-position: center, center;
+  }
+
+  .cta-font {
+    font-size: 1.5rem;
+  }
+
+  .gallery-slide .slick-list {
+    margin-top: -50px;
+    margin-bottom: -50px;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) lg */
+@media (min-width: 992px) {}
+
+/* // Extra large devices (large desktops, 1200px and up) xlg */
+@media (min-width: 1200px) {}
