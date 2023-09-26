@@ -5663,6 +5663,68 @@ body>section.reviewDv {
 }
 
 
+.footer-01 {
+  background-image: url(./img/nycfooter.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding: 40px 0px;
+}
+
+.footer-01::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--primary);
+  opacity: 0.8;
+}
+
+.qualities-01 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.qualities-01 .quality {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.review-platforms {
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
+}
+
+.review-platform {
+  position: relative;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.review-platform img {
+  width: 190px;
+  height: auto;
+}
+
+.review-platforms div:not(:first-child)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 2px;
+  background-color: var(--button-color);
+}
+
+
 /* // Extra small devices (portrait phones, less than 576px) */
 /* // No media query for `xs` since this is the default in Bootstrap */
 
@@ -5717,6 +5779,11 @@ body>section.reviewDv {
   .gallery-slide .slick-list {
     margin-top: -50px;
     margin-bottom: -50px;
+  }
+
+  .footer-01 {
+    height: 100vh;
+    padding: 60px 0px;
   }
 }
 

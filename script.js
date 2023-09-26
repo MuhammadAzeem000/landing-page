@@ -90,6 +90,15 @@ $(function () {
             mobileFirst: true
         });
 
+        $('.review-platforms').slick({
+            autoplay: true,
+            autoplaySpeed: 5000,
+            slidesToShow: 1,
+            arrows: false,
+            dots: false,
+            mobileFirst: true
+        });
+
         $('.reviewSlider').slick({
             autoplay: true,
             autoplaySpeed: 5000,
@@ -126,8 +135,8 @@ $(function () {
         $('.formdiv').addClass("popformkhulwana");
     });
 
-    var header = document.getElementById("myHeader");
-    header.classList.add('sticky-header');
+    // var header = document.getElementById("myHeader");
+    // header.classList.add('sticky-header');
 
     $(".lazy").slick({
         lazyLoad: 'ondemand', // ondemand progressive anticipated
