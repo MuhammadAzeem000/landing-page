@@ -2386,8 +2386,6 @@ body>section.portfolioDvinfo .portfolioDv .row>div {
 
   align-items: center;
 
-  /* min-height: 100vh; */
-
 }
 
 body>section.portfolioDvinfo .portfolioDv .slideDv {
@@ -2802,14 +2800,6 @@ body>section.portfolioDvinfo .arrowsDv {
 
   justify-content: center;
 
-  /* position: absolute;
-
-  left: 0px;
-
-  right: 0px;
-
-  bottom: 30px; */
-
 }
 
 body>section.portfolioDvinfo .arrowsDv a {
@@ -3168,8 +3158,6 @@ body>section.notchDv h2 span {
 
 body>footer {
 
-  /* padding: 40px 0px 0px; */
-
   background: var(--primary);
 
   overflow: hidden;
@@ -3334,7 +3322,6 @@ body>footer .container .row .footerbagdeDv {
 
   border-bottom: 1px solid #ffffff24;
 
-
   padding: 0px 0px 40px;
 
   margin: 0px 0px 20px;
@@ -3462,37 +3449,6 @@ body>section.ourProcess .markdv img {
   height: 100%;
 
 }
-
-/* body>section.ourProcess h2 {
-
-  font-size: 2.2rem;
-
-  line-height: 1;
-
-  margin: 0 0 50px;
-
-  padding: 0;
-
-  font-weight: 700;
-
-  position: relative;
-
-  color: #fff;
-
-} */
-
-/* body>section.ourProcess h2:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -8px;
-  margin: auto;
-  width: 30px;
-  height: 2px;
-  background: var(--button-color);
-
-} */
 
 body>section.ourProcess p {
 
@@ -3684,33 +3640,6 @@ body>section.clientLogo p {
   text-transform: uppercase;
 
 }
-
-/* .clientbadge-heading h2 {
-  font-size: 2.2rem;
-  text-align: center;
-  font-weight: bold;
-  margin: 0px;
-  padding: 0px;
-  display: block;
-  letter-spacing: 0px;
-  line-height: 1.3;
-  margin-bottom: 40px;
-  color: #fff;
-} */
-
-/* .clientbadge-heading h2:before {
-  content: "";
-  display: block;
-  width: 30px;
-  height: 2px;
-  background: var(--button-color);
-  margin: 0px auto;
-  position: absolute;
-  left: 0;
-  right: 0px;
-  bottom: 28px;
-  vertical-align: middle;
-} */
 
 body>section.clientLogo p span {
 
@@ -4078,25 +4007,17 @@ h2.ub-serv-heading {
 }
 
 .arrow-separater {
-
   height: 33px;
-
   width: 2px;
-
   background: #d4d4d4;
-
   float: left;
-
   display: block;
-
   margin-top: 5px;
-
 }
 
 .ub-serv-section {
   background: var(--button-color);
   color: #fff;
-  /* padding: 60px 0; */
 }
 
 
@@ -4107,12 +4028,6 @@ h2.ub-serv-heading {
   margin: 0 0 90px;
   color: #fff;
   position: relative;
-
-  /* text-align: center;
-  font-size: 32px;
-  width: 80%;
-  margin: 0px auto 70px auto; */
-
 }
 
 h2.ub-serv-heading::before {
@@ -4564,12 +4479,6 @@ h1.ub-testi-heading:before {
     display: none;
   }
 
-  /* body>section.ourProcess h2 {
-    font-size: 20px;
-    margin: 0px 0px 30px;
-    line-height: 1.2;
-  } */
-
   body>section.ourProcess .offers .col01 {
     text-align: left;
   }
@@ -4610,20 +4519,6 @@ h1.ub-testi-heading:before {
     position: relative;
     z-index: 10;
   }
-
-  /* body>section.ourProcess h2:before {
-    content: "";
-    display: block;
-    width: 80px;
-    height: 1px;
-    background: var(--button-color);
-    margin: 0px auto;
-    position: absolute;
-    left: 0;
-    right: 0px;
-    top: 105px;
-    vertical-align: middle;
-  } */
 
   body>section.portfolioDvinfo {
     overflow: hidden;
@@ -5192,141 +5087,6 @@ body>section .card-body h4 {
   color: #fff;
 }
 
-/* 
-
-#appCalculatorModal .question-container {}
-
-#appCalculatorModal .question-container .question .choice-container {}
-
-.choice-container {}
-
-.choice-btn {
-  border: 2px solid #fff;
-  width: 8.0em;
-  height: 5.0em;
-}
-
-.choice-btn span {
-  font-size: 14px;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-
-.choice-btn input {
-  position: absolute;
-  display: none;
-  color: #fff !important;
-}
-
-.choice-btn input:checked+span {
-  background-color: #F75A1B;
-border: 2px solid var(--button-color);
-
-}
-
-#calculatorModal h2 {
-  font-size: 1.3rem;
-  color: #fff;
-}
-
-#calculatorModal .modal-header {
-  border-bottom: 2px solid var(--button-color);
-}
-
-#calculatorModal .modal-header .fa-times {
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #fff;
-}
-
-.question {
-  color: #fff;
-  margin: 15px 0px;
-}
-
-.question h4 {
-  font-size: 1rem;
-  margin-bottom: 12px;
-}
-
-.modal-body {
-  padding: 1.5rem 1rem;
-}
-
-.question-choice {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.question-choice .form-control {
-  font-size: 14px;
-  line-height: 1.1;
-  display: flex;
-  gap: 0.5em;
-  background-color: transparent;
-  border: none;
-  color: #fff;
-  width: auto;
-  height: auto;
-}
-
-.question-choice input[type="checkbox"] {
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: #fff;
-  margin: 0;
-  font: inherit;
-  color: currentColor;
-  width: 1.15em;
-  height: 1.15em;
-  border: 0.15em solid currentColor;
-  border-radius: 0.15em;
-  transform: translateY(-0.075em);
-  display: grid;
-  place-content: center;
-}
-
-.question-choice input[type="checkbox"]::before {
-  content: "";
-  width: 0.65em;
-  height: 0.65em;
-  transform: scale(0);
-  transition: 120ms transform ease-in-out;
-  box-shadow: inset 1em 1em var(--form-control-color);
-}
-
-input[type="checkbox"]:checked::before {
-  transform: scale(1);
-  background-color: var(--button-color);
-}
-
-#calculatorModal .child-option {
-  display: none;
-}
-
-#calculatorModal .child-option.show {
-  display: block;
-}
-
-#calculatorModal .child-option .form-control {
-  font-size: 12px;
-  padding-left: 1.5rem;
-
-}
-
-*/
-/* @media (min-width: 992px) {
-  .modal-lg {
-    max-width: 950px;
-  }
-} 
-
-*/
-
 .cta-heading {
   font-size: 2.2rem !important;
   font-weight: bold;
@@ -5655,8 +5415,24 @@ body .bannerdv {
   background-position: right;
 }
 
+/* body .bannerdv::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--primary);
+  opacity: 0.7;
+} */
+
 .cta-font {
   font-size: 1rem;
+  cursor: pointer;
+}
+
+.cta-00:hover {
+  color: #fff;
 }
 
 .bg-color-01 {

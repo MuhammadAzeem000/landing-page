@@ -451,8 +451,9 @@ window.onload = () => {
     if ($(window).width() < 768) {
         $('.noslide').remove();
         $('.mobiSlider').slick({
+            infinite: true,
             autoplay: true,
-            autoplaySpeed: 5000,
+            autoplaySpeed: 2000,
             slidesToShow: 1,
             arrows: false,
             dots: false,
@@ -460,8 +461,9 @@ window.onload = () => {
         });
 
         $('.review-platforms').slick({
+            infinite: true,
             autoplay: true,
-            autoplaySpeed: 5000,
+            autoplaySpeed: 2000,
             slidesToShow: 1,
             arrows: false,
             dots: false,
@@ -469,8 +471,9 @@ window.onload = () => {
         });
 
         $('.reviewSlider').slick({
+            infinite: true,
             autoplay: true,
-            autoplaySpeed: 5000,
+            autoplaySpeed: 2000,
             slidesToShow: 1,
             arrows: false,
             dots: true,
@@ -652,7 +655,7 @@ window.onload = () => {
     $('#industry-cards').slick({
         arrows: false,
         autoplay: true,
-        autoplaySpeed: 9000,
+        autoplaySpeed: 2000,
         infinite: true,
     });
 
