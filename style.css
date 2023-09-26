@@ -5652,7 +5652,7 @@ body .bannerdv {
   padding-top: 28vh;
   padding-bottom: 10vh;
   position: relative;
-  background-position: left;
+  background-position: right;
 }
 
 .cta-font {
@@ -5739,13 +5739,13 @@ body>section.reviewDv {
 body section.contactFormDv .textCol h2 {
   color: #fff;
   font-weight: 900;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   line-height: 0.9;
 }
 
 body section.contactFormDv .textCol h2 span {
   color: white;
-  font-size: 2.5rem;
+  font-size: 4.5rem;
   font-weight: 900;
   margin-top: -25px;
   text-shadow: 0px 5px 15px #7d0422;

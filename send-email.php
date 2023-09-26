@@ -43,11 +43,16 @@ try {
     $message = $_POST['Message'];
     $target = $_POST['Target'];
 
+    $pdfBlob = $_FILES['pdf']['tmp_name'];
+
+
     $emailbody = "Name = " . $name . "<br>Email = " . $email . "<br>Country = " . $country . "<br>Phone = " .  $phone .  "<br>Message =" . $message . "<br> Location =" . $target;
 
     $mail->Subject = "PEBTECHSOLUTIONS Landing Page USA V2 - CONTACT USER DETAILS!";
     $mail->Body    =     $emailbody;
 
+
+    $mail->addAttachment($pdfBlob, 'sample.pdf', 'base64', 'application/pdf');
     $mail->isHTML(true);
     $mail->send();
 
