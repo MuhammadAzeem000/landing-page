@@ -3,6 +3,99 @@
   --primary: #151522;
 }
 
+/* Loader */
+
+body.loading {
+  position: relative;
+  overflow: hidden;
+}
+
+body.loading>.loader {
+  background: var(--primary) !important;
+  color: #FFF;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body.loading>.loader>.loader1 {
+  display: inline-block;
+  font-size: 0px;
+  padding: 0px;
+}
+
+body.loading>.loader>.loader1 span {
+  vertical-align: middle;
+  border-radius: 100%;
+
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 3px 2px;
+  -webkit-animation: loader1 0.8s linear infinite alternate;
+  animation: loader1 0.8s linear infinite alternate;
+}
+
+body.loading>.loader>.loader1>span:nth-child(1) {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+  background: rgba(255, 0, 21, 0.6);
+}
+
+body.loading>.loader>.loader1>span:nth-child(2) {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+  background: rgba(255, 0, 21, 0.8);
+}
+
+body.loading>.loader>.loader1>span:nth-child(3) {
+  -webkit-animation-delay: -0.26666s;
+  animation-delay: -0.26666s;
+  background: rgb(255, 0, 21);
+}
+
+body.loading>.loader>.loader1>span:nth-child(4) {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+  background: rgba(255, 0, 21, 0.8);
+
+}
+
+body.loading>.loader>.loader1>span:nth-child(5) {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+  background: rgba(255, 0, 21, 0.4);
+}
+
+@keyframes loader1 {
+  from {
+    transform: scale(0, 0);
+  }
+
+  to {
+    transform: scale(1, 1);
+  }
+}
+
+@-webkit-keyframes loader1 {
+  from {
+    -webkit-transform: scale(0, 0);
+  }
+
+  to {
+    -webkit-transform: scale(1, 1);
+  }
+}
+
+/* Loader */
+
 .industry-card {
   background-image: url(https://www.matellio.co.uk/wp-content/uploads/2019/07/banner-1.jpg);
   background-repeat: no-repeat;
@@ -1160,7 +1253,8 @@ body>section.featureDv h3 {
 
 .testimonial-name {
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 600;
+  letter-spacing: 0.8px;
 }
 
 
@@ -1652,43 +1746,9 @@ body section.contactFormDv .textCol h4:before {
 
 }
 
-body section.contactFormDv .textCol h2 {
 
-  color: #460b80;
 
-  color: #fff;
 
-  font-weight: 900;
-
-  font-size: 5.1rem;
-
-  line-height: 0.9;
-
-}
-
-body section.contactFormDv .textCol h2 span {
-
-  color: white;
-
-  font-size: 7.2rem;
-
-  font-weight: 900;
-
-  margin-top: -25px;
-
-}
-
-body section.contactFormDv .textCol h3 {
-
-  color: #fff;
-
-  font-size: 30px;
-
-  margin-left: 5px;
-
-  font-weight: 700;
-
-}
 
 body section.contactFormDv .textCol h3 span {
 
@@ -3108,7 +3168,7 @@ body>section.notchDv h2 span {
 
 body>footer {
 
-  padding: 40px 0px 0px;
+  /* padding: 40px 0px 0px; */
 
   background: var(--primary);
 
@@ -3362,23 +3422,6 @@ body>footer .container-fluid .row.copyrightDv .col-md-12 h2 {
 
 }
 
-
-
-body>section.ourProcess {
-
-  display: block;
-
-  background-color: var(--primary);
-
-  background-size: cover;
-
-  position: relative;
-
-  text-align: center;
-
-  padding: 50px 0 50px 0;
-
-}
 
 body>section.ourProcess .serviceSlider {
 
@@ -3871,7 +3914,7 @@ body>section.bannerdv .formDv {
 .ub-serv-section {
   background: url(images/service-section-bg.html) no-repeat top center;
   color: #fff;
-  padding: 25px 0;
+  /* padding: 25px 0; */
 }
 
 h2.ub-serv-heading {
@@ -4053,7 +4096,7 @@ h2.ub-serv-heading {
 .ub-serv-section {
   background: var(--button-color);
   color: #fff;
-  padding: 60px 0;
+  /* padding: 60px 0; */
 }
 
 
@@ -4340,7 +4383,7 @@ h1.ub-testi-heading:before {
   .ub-serv-section {
     background: linear-gradient(to right, var(--button-color) 0%, var(--button-color) 101%);
     color: #fff;
-    padding: 60px 0;
+    /* padding: 60px 0; */
   }
 
   .ub-serv-col {
@@ -4521,10 +4564,6 @@ h1.ub-testi-heading:before {
     display: none;
   }
 
-  body>section.ourProcess {
-    overflow: hidden;
-  }
-
   /* body>section.ourProcess h2 {
     font-size: 20px;
     margin: 0px 0px 30px;
@@ -4655,33 +4694,8 @@ h1.ub-testi-heading:before {
     top: 18px;
   }
 
-  body>section.ourProcess {
-    display: block;
-    background-color: var(--primary);
-    background-size: cover;
-    position: relative;
-    text-align: center;
-    padding: 50px 0 50px 0;
-  }
-
   body section.contactFormDv .textCol {
     padding-top: 0px;
-  }
-
-  body section.contactFormDv .textCol h2 {
-    color: #460b80;
-    color: #fff;
-    font-weight: 900;
-    font-size: 30px;
-    line-height: 0.9;
-  }
-
-  body section.contactFormDv .textCol h2 span {
-    color: white;
-    font-size: 30px;
-    font-weight: 900;
-    margin-top: -25px;
-    text-shadow: 0px 5px 15px #7d0422;
   }
 
   body section.contactFormDv .textCol {
@@ -5080,11 +5094,13 @@ small {
 }
 
 .footer-side-01 h2 {
-  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 1rem;
 }
 
 .footer-side-01 p {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .card {
@@ -5633,7 +5649,7 @@ body .bannerdv {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
-  padding-top: 22vh;
+  padding-top: 28vh;
   padding-bottom: 10vh;
   position: relative;
   background-position: left;
@@ -5652,7 +5668,7 @@ body .bannerdv {
 }
 
 body>section.reviewDv {
-  padding: 60px 0px;
+  /* padding: 60px 0px; */
   width: 100%;
   overflow: hidden;
 }
@@ -5669,7 +5685,7 @@ body>section.reviewDv {
   background-position: center;
   background-size: cover;
   position: relative;
-  padding: 40px 0px;
+  /* padding: 40px 0px; */
 }
 
 .footer-01::before {
@@ -5695,23 +5711,19 @@ body>section.reviewDv {
   gap: 1rem;
 }
 
-.review-platforms {
-  /* display: flex;
-  align-items: center;
-  justify-content: space-between; */
+.qualities-01 .quality h6 {
+  margin: 0;
 }
 
-.review-platform {
-  position: relative;
-  padding: 0.5rem 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.review-platform img {
+.review-platforms img {
   width: 190px;
   height: auto;
+  scale: 0.9;
+  transition: all 500ms ease-in-out;
+}
+
+.review-platforms img:hover {
+  scale: 1;
 }
 
 .review-platforms div:not(:first-child)::after {
@@ -5723,6 +5735,48 @@ body>section.reviewDv {
   width: 2px;
   background-color: var(--button-color);
 }
+
+body section.contactFormDv .textCol h2 {
+  color: #fff;
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 0.9;
+}
+
+body section.contactFormDv .textCol h2 span {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-top: -25px;
+  text-shadow: 0px 5px 15px #7d0422;
+}
+
+body section.contactFormDv .textCol h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-left: 5px;
+  font-weight: 700;
+}
+
+body>section.ourProcess {
+  display: block;
+  background-color: var(--primary);
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+.custom-padding {
+  padding: 40px 0px;
+}
+
+.font-14 {
+  font-size: 14px;
+}
+
+
 
 
 /* // Extra small devices (portrait phones, less than 576px) */
@@ -5783,8 +5837,25 @@ body>section.reviewDv {
 
   .footer-01 {
     height: 100vh;
-    padding: 60px 0px;
+    /* padding: 60px 0px; */
   }
+
+  body section.contactFormDv .textCol h2 {
+    font-size: 6rem;
+  }
+
+  body section.contactFormDv .textCol h2 span {
+    font-size: 6rem;
+  }
+
+  body section.contactFormDv .textCol h3 {
+    font-size: 2rem;
+  }
+
+  .custom-padding {
+    padding: 50px 0;
+  }
+
 }
 
 /* // Large devices (desktops, 992px and up) lg */

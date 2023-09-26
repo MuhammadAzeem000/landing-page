@@ -418,6 +418,10 @@ $(function () {
         );
     });
 
+
+    window.onload = () => {
+        document.querySelector('body').classList.remove('loading')
+    }
 });
 
 function toggleChild() {
