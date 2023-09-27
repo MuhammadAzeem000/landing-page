@@ -5405,7 +5405,7 @@ body>section .card-body h4 {
 }
 
 body .bannerdv {
-  background: url(img/mash-bg-1.webp);
+  background: url(img/bg-2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -5552,6 +5552,81 @@ body>section.ourProcess {
   font-size: 14px;
 }
 
+.content {
+  position: relative;
+}
+
+.content .mob-01 {
+  position: absolute;
+  top: 30%;
+  left: -20%;
+  z-index: 1;
+}
+
+.content .mob-02 {
+  position: absolute;
+  top: 15%;
+  right: -15%;
+}
+
+.got-an-idea {
+  color: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 3;
+}
+
+.got-an-idea h2 {
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 0.9;
+}
+
+.got-an-idea h2 span {
+  color: var(--button-color);
+  text-shadow: 0px 5px 15px #7d0422;
+}
+
+.got-an-idea h4 {
+  font-size: 1.5rem;
+  margin-left: 5px;
+  font-weight: 700;
+}
+
+.on1 {
+  -webkit-animation: top 3s infinite alternate;
+  animation: top 3s infinite alternate;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes top {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.on2 {
+  -webkit-animation: opposite 3s infinite alternate;
+  animation: opposite 3s infinite alternate;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes opposite {
+  0% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 
 
 
@@ -5630,6 +5705,19 @@ body>section.ourProcess {
 
   .custom-padding {
     padding: 50px 0;
+  }
+
+  .got-an-idea h2 {
+    font-size: 6rem;
+  }
+
+  .got-an-idea h2 span {
+    color: var(--button-color);
+    text-shadow: 0px 5px 15px #7d0422;
+  }
+
+  .got-an-idea h4 {
+    font-size: 1.5rem;
   }
 
 }
