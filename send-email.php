@@ -29,7 +29,7 @@ try {
     // $mail->addAddress('rashid.latif@pebtechsolutions.com');     // Add a recipient
     // $mail->addAddress('usman.ahmed@pebtechsolutions.com');     // Add a recipient
     // $mail->addAddress('usmanahmed0262@gmail.com');     // Add a recipient
-        $mail->addAddress('azeem.khan@pebtechsolutions.com');     // Add a recipient
+    $mail->addAddress('azeem.khan@pebtechsolutions.com');     // Add a recipient
 
 
 
@@ -52,8 +52,10 @@ try {
     $mail->Subject = "PEBTECHSOLUTIONS Landing Page USA V2 - CONTACT USER DETAILS!";
     $mail->Body    =     $emailbody;
 
+    if(isset($pdfBlob)) {
+        $mail->addAttachment($pdfBlob, 'sample.pdf', 'base64', 'application/pdf');
+    }
 
-    $mail->addAttachment($pdfBlob, 'sample.pdf', 'base64', 'application/pdf');
     $mail->isHTML(true);
     $mail->send();
 

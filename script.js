@@ -779,8 +779,6 @@ window.onload = () => {
                         formData.append('pdf', BLOB, name.value.trim() + '.pdf');
                     }
 
-                    console.log(formData.get('pdf'))
-
                     $.ajax({
                         type: "POST",
                         url: "https://pebtechsolutions.com/leading-mobile-app-development-company/send-email.php",
