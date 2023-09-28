@@ -22,13 +22,14 @@ try {
 
     //Recipients
     $mail->setFrom('info@pebtechsolutions.com');
-    $mail->addAddress('sales@pebtechsolutions.com');     // Add a recipient
-    $mail->addAddress('saad.alam@pebtechsolutions.com');     // Add a recipient
-    $mail->addAddress('ziyad.mehtab@commtel.ae');     // Add a recipient
-    $mail->addAddress('sonia.atif@pebtechsolutions.com');     // Add a recipient
-    $mail->addAddress('rashid.latif@pebtechsolutions.com');     // Add a recipient
-    $mail->addAddress('usman.ahmed@pebtechsolutions.com');     // Add a recipient
-    $mail->addAddress('usmanahmed0262@gmail.com');     // Add a recipient
+    // $mail->addAddress('sales@pebtechsolutions.com');     // Add a recipient
+    // $mail->addAddress('saad.alam@pebtechsolutions.com');     // Add a recipient
+    // $mail->addAddress('ziyad.mehtab@commtel.ae');     // Add a recipient
+    // $mail->addAddress('sonia.atif@pebtechsolutions.com');     // Add a recipient
+    // $mail->addAddress('rashid.latif@pebtechsolutions.com');     // Add a recipient
+    // $mail->addAddress('usman.ahmed@pebtechsolutions.com');     // Add a recipient
+    // $mail->addAddress('usmanahmed0262@gmail.com');     // Add a recipient
+        $mail->addAddress('azeem.khan@pebtechsolutions.com');     // Add a recipient
 
 
 

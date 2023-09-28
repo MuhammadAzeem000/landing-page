@@ -483,7 +483,6 @@ window.onload = () => {
         var topwidtH = $('slide .col-md-7').width();
 
         $('.textslider').css({ 'width': topwidtH });
-
     }
 
     $(".formdiv .toggle span").click(function () {
@@ -621,23 +620,30 @@ window.onload = () => {
     });
 
     $('#portfolio-screenshot').slick({
-        slidesToShow: 3,
+        infinite: true,
+        slidesToShow: 5,
         dots: false,
         arrows: false,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 2000,
+        centerMode: true,
+        focusOnSelect: true,
+        centerPadding: "5px",
+
         asNavFor: '.app-sliders',
+
         responsive: [
             {
-                breakpoint: 1230,
+                breakpoint: 1700,
                 settings: {
-                    slidesToShow: 2
+                    slidesToShow: 3,
+                    centerPadding: "5px",
                 }
             },
             {
-                breakpoint: 860,
+                breakpoint: 992,
                 settings: {
-                    slidesToShow: 1
+                    slidesToShow: 1,
                 }
             }
         ]
@@ -777,7 +783,10 @@ window.onload = () => {
 
                     $.ajax({
                         type: "POST",
-                        url: "https://pebtechsolutions.com/top-mobile-app-development-company-usa/send-email.php",
+                        url: "https://pebtechsolutions.com/leading-mobile-app-development-company/send-email.php",
+                        processData: false,
+                        contentType: false,
+                        cache: false,
                         dataType: "json",
                         data: formData,
                         success: function (response) {
