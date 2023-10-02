@@ -620,28 +620,30 @@ window.onload = () => {
     });
 
     $('#portfolio-screenshot').slick({
-        infinite: true,
-        slidesToShow: 5,
+        // infinite: true,
+        slidesToShow: 3,
         dots: false,
         arrows: false,
-        autoplay: false,
-        autoplaySpeed: 2000,
-        centerMode: true,
-        focusOnSelect: true,
-        centerPadding: "5px",
-
+        // autoplay: true,
+        // autoplaySpeed: 2000,
         asNavFor: '.app-sliders',
 
         responsive: [
             {
-                breakpoint: 1700,
+                breakpoint: 1200,
                 settings: {
-                    slidesToShow: 3,
-                    centerPadding: "5px",
+                    slidesToShow: 2,
+                    // centerPadding: "5px",
                 }
             },
             {
                 breakpoint: 992,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+            {
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 1,
                 }
@@ -653,8 +655,8 @@ window.onload = () => {
         slidesToShow: 1,
         dots: false,
         arrows: false,
-        autoplay: true,
-        autoplaySpeed: 2000,
+        // autoplay: true,
+        // autoplaySpeed: 2000,
         asNavFor: '#portfolio-screenshot'
     })
 

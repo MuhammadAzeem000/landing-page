@@ -237,26 +237,21 @@ body.loading>.loader>.loader1>span:nth-child(5) {
   }
 }
 
+.gallery-slide .slick-list {
+  background: url('./img/white-iphone.webp') no-repeat center center / auto 100%;
+  margin-top: -50px;
+  margin-bottom: -50px;
+  margin-right: -6px;
+}
+
 .gallery-slide .item {
-  margin: 75px auto;
   display: flex !important;
-  width: 100%;
   justify-content: center;
+  margin: 75px auto 75px auto;
 }
 
 .gallery-slide .item img {
   border-radius: 3px;
-  height: 390px;
-  opacity: 0.3;
-  transition: all 200ms ease-in-out;
-}
-
-.gallery-slide .slick-center img {
-  opacity: 1;
-}
-
-.gallery-slide .item img {
-  /* margin: 0px 0px 0px calc(100% - 265px); */
 }
 
 /* APP Portfolio End */
@@ -4703,7 +4698,7 @@ body>section.qualities {
 
 body>section.qualities .qualities-card {
   background-color: rgba(2, 2, 2, 0.60);
-  padding: 50px 0px;
+  padding: 50px 10px;
   color: #fff;
   border-left: var(--button-color);
   border-left-style: solid;
@@ -5448,12 +5443,6 @@ body>section.reviewDv {
   overflow: hidden;
 }
 
-.gallery-slide .slick-list {
-  /* background: url('./img/white-iphone.webp') no-repeat center right / auto 100%; */
-  background: url('./img/white-iphone.webp') no-repeat center center / auto 100%;
-  overflow: hidden;
-}
-
 
 .footer-01 {
   background-image: url(./img/nycfooter.jpg);
@@ -5681,11 +5670,6 @@ body>section.ourProcess {
     font-size: 1.5rem;
   }
 
-  .gallery-slide .slick-list {
-    margin-top: -50px;
-    margin-bottom: -50px;
-  }
-
   .footer-01 {
     height: 100vh;
     /* padding: 60px 0px; */
@@ -5718,6 +5702,10 @@ body>section.ourProcess {
 
   .got-an-idea h4 {
     font-size: 1.5rem;
+  }
+
+  .gallery-slide .slick-list {
+    background: url('./img/white-iphone.webp') no-repeat center right / auto 100%;
   }
 
 }
