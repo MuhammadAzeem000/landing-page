@@ -214,13 +214,7 @@ window.onload = () => {
     let currentQuestionIndex = 0;
     let history = [];
     const selectedOptions = [];
-    let BLOB = null
-
-    function sendPDF(blob) {
-        var formData = new FormData();
-        formData.append('pdf', blob, 'sample.pdf');
-        return formData
-    }
+    let BLOB = null;
 
     function isCheck() {
         const optionsElement = document.getElementById("options");
@@ -620,26 +614,26 @@ window.onload = () => {
     });
 
     $('#portfolio-screenshot').slick({
-        // infinite: true,
-        slidesToShow: 3,
+        infinite: true,
+        slidesToShow: 4,
         dots: false,
         arrows: false,
-        // autoplay: true,
-        // autoplaySpeed: 2000,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        testMode: true,
         asNavFor: '.app-sliders',
 
         responsive: [
             {
-                breakpoint: 1200,
+                breakpoint: 1600,
                 settings: {
-                    slidesToShow: 2,
-                    // centerPadding: "5px",
+                    slidesToShow: 3,
                 }
             },
             {
-                breakpoint: 992,
+                breakpoint: 1200,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                 }
             },
             {
@@ -655,8 +649,8 @@ window.onload = () => {
         slidesToShow: 1,
         dots: false,
         arrows: false,
-        // autoplay: true,
-        // autoplaySpeed: 2000,
+        autoplay: true,
+        autoplaySpeed: 2000,
         asNavFor: '#portfolio-screenshot'
     })
 
@@ -665,6 +659,11 @@ window.onload = () => {
         autoplay: true,
         autoplaySpeed: 2000,
         infinite: true,
+    });
+
+    // On before slide change
+    $('#portfolio-screenshot').on('setPosition', function (a, b) {
+        $('#setWidthDynamic').css('width', b.$slides[0].offsetWidth + "px");
     });
 
     AOS.init();
